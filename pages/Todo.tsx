@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
-// import "../styles/theme.css";
+
 
 // Определение схемы валидации для задач
 const taskSchema = z.object({
@@ -36,6 +36,8 @@ export default function TodoApp() {
   const [filter, setFilter] = useState<"все" | "активные" | "выполнено">("все");
   const [darkMode, setDarkMode] = useState(true);
   const [editingTask, setEditingTask] = useState<Task | null>(null);
+
+  // _______ Дополнительно можно сделать фокус на Input, но в задании не указано _______
 
   // Загрузка задач из localStorage при монтировании компонента и установка темы
   useEffect(() => {
@@ -114,7 +116,6 @@ export default function TodoApp() {
     }
   });
 
-  console.log('darkMode',darkMode)
   return (
     <div
     className={`min-h-screen p-6 transition-colors duration-300 ${!darkMode ? "dark" : "light"}`}
