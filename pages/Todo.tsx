@@ -37,11 +37,6 @@ export default function TodoApp() {
   const [darkMode, setDarkMode] = useState(true);
   const [editingTask, setEditingTask] = useState<Task | null>(null);
 
-  const inputRef = useRef<HTMLInputElement>(null);
-  if (inputRef.current) {
-    inputRef.current.focus();
-  }
-
   // Загрузка задач из localStorage при монтировании компонента и установка темы
   useEffect(() => {
     const savedTasks = JSON.parse(localStorage.getItem("tasks") || "[]");
@@ -130,7 +125,7 @@ export default function TodoApp() {
 
         {/* Форма для добавления и редактирования задач */}
         <form onSubmit={handleSubmit(handleTaskSubmit)} className="flex gap-2 mt-4">
-          <Input {...register("title")} ref={inputRef} placeholder="Добавить или изменить задачу..." />
+          <Input {...register("title")} placeholder="Добавить или изменить задачу..." />
           <Button type="submit">{editingTask ? "Сохранить" : "Добавить"}</Button>
         </form>
         {errors.title && <p className="text-red-500">{errors.title.message}</p>}
