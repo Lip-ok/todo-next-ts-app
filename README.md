@@ -1,6 +1,6 @@
 #ToDo Next TypeScript App
 
-[![todo](https://i.postimg.cc/7Zqqf1MG/media-19531d2c5f311776c67e44b76083db13309004956-1.png)](https://postimg.cc/xcpwZzZn)
+[![todo]([https://i.postimg.cc/7Zqqf1MG/media-19531d2c5f311776c67e44b76083db13309004956-1.png)](https://postimg.cc/xcpwZzZn](https://postimg.su/image/ycZluozq/Снимок%20экрана%202025-03-18%20в%2015.59.04.png))
 
  ### Как посмотреть проект:
    ```sh
