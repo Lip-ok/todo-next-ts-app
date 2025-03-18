@@ -1,9 +1,9 @@
 #ToDo Next TypeScript App
 
  ### Как посмотреть проект:
-     ```sh
+   ```sh
     https://todo-next-ts-app.onrender.com/
-    ```
+   ```
 
 ### Как запустить проект:
 
