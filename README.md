@@ -1,6 +1,6 @@
 #ToDo Next TypeScript App
 
-[![todo](http://postimg.su/image/ycZluozq/Снимок экрана 2025-03-18 в 15.59.04.png)
+![todo](https://github.com/Lip-ok/todo-next-ts-app/blob/main/todo.png)
 
  ### Как посмотреть проект:
    ```sh
