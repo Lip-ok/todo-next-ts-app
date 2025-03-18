@@ -24,6 +24,6 @@
    ```sh
    http://localhost:3000
    ```
-![todo]([http://url/to/img.png](http://postimg.su/iX4VdhpI))
+![]([[http://url/to/img.png](http://postimg.su/iX4VdhpI](https://postimg.su/image/ycZluozq/Снимок%20экрана%202025-03-18%20в%2015.59.04.png)))
 
 
